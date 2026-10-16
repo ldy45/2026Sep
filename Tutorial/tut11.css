@@ -1,0 +1,19 @@
+h1 {
+font-family: Impact;
+color: green;
+text-align: center;}
+
+p {
+font-size: 15px;
+line-height: 1.5;
+padding: 15px;
+border-width: 2px;
+border-style: solid;
+border-color: green;
+border-radius: 10px;}
+
+.lalala{
+border-width: 3px;}
+
+font {
+font-weight: bold;}
