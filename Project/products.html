@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products - Kkumi Stationery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Kkumi Stationery</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+</nav>
+</header>
+
+<main>
+
+<h2>All Products</h2>
+
+<h3>Notebooks and Pens</h3>
+<div class="product-row">
+<div class="product">
+<img src="images/notebook1.jpg" alt="Dotted Notebook A5">
+<h3>Dotted Notebook A5</h3>
+<p class="price">RM 12.90</p>
+<button class="button" onclick="addToCart(0)">Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="images/notebook2.jpg" alt="Spiral Notebook B5">
+<h3>Spiral Notebook B5</h3>
+<p class="price">RM 9.50</p>
+<button class="button" onclick="addToCart(1)">Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="images/pen1.jpg" alt="Gel Pen Set (10 pcs)">
+<h3>Gel Pen Set (10 pcs)</h3>
+<p class="price">RM 15.00</p>
+<button class="button" onclick="addToCart(2)">Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="images/pen2.jpg" alt="Highlighter Set (7 pcs)">
+<h3>Highlighter Set (7 pcs)</h3>
+<p class="price">RM 18.90</p>
+<button class="button" onclick="addToCart(3)">Add to Cart</button>
+</div>
+</div>
+
+<h3>Pencils and Accessories</h3>
+<div class="product-row">
+<div class="product">
+<img src="images/pen3.jpg" alt="Mechanical Pencil 0.9">
+<h3>Mechanical Pencil 0.9</h3>
+<p class="price">RM 7.90</p>
+<button class="button" onclick="addToCart(4)">Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="images/acc1.jpg" alt="Sticky Notes Pack">
+<h3>Sticky Notes Pack</h3>
+<p class="price">RM 6.50</p>
+<button class="button" onclick="addToCart(5)">Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="images/acc2.jpg" alt="Washi Tape Set">
+<h3>Washi Tape Set</h3>
+<p class="price">RM 11.00</p>
+<button class="button" onclick="addToCart(6)">Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="images/acc3.jpg" alt="Canvas Pencil Case">
+<h3>Canvas Pencil Case</h3>
+<p class="price">RM 19.90</p>
+<button class="button" onclick="addToCart(7)">Add to Cart</button>
+</div>
+</div>
+
+</main>
+
+<footer>
+<p>&copy; 2026 Kkumi Stationery. Created by LDY</p>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+updateCartCount();
+</script>
+
+</body>
+</html>

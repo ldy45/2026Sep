@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cart - Kkumi Stationery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Kkumi Stationery</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+</nav>
+</header>
+
+<main>
+
+<h2>Shopping Cart</h2>
+
+<table class="cart-table" cellpadding="10">
+<tr>
+<th>Product</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Subtotal</th>
+<th>Action</th>
+</tr>
+<tbody id="cart-rows">
+<!-- showCart() adds the product rows here -->
+</tbody>
+</table>
+
+<p class="total">Total: RM <span id="cart-total">0.00</span></p>
+
+<div class="cart-buttons">
+<button class="grey-button" onclick="clearCart()">Clear Cart</button>
+<button class="button" onclick="checkout()">Checkout</button>
+</div>
+
+</main>
+
+<footer>
+<p>&copy; 2026 Kkumi Stationery. Created by LDY</p>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+showCart();
+</script>
+
+</body>
+</html>

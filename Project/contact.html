@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact - Kkumi Stationery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Kkumi Stationery</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+</nav>
+</header>
+
+<main>
+
+<h2>Contact Us</h2>
+<p>Have a question? Send us a message.</p>
+
+<!-- validateForm() checks the form before it is sent -->
+<form onsubmit="return validateForm()">
+<table class="contact-form" border="0">
+<tr>
+<td>Name</td>
+<td><input type="text" id="name"></td>
+</tr>
+<tr>
+<td>Email</td>
+<td><input type="email" id="email"></td>
+</tr>
+<tr>
+<td>Message</td>
+<td><textarea id="message" rows="5"></textarea></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" value="Send Message" class="button"></td>
+</tr>
+</table>
+</form>
+
+<p id="form-result"></p>
+
+</main>
+
+<footer>
+<p>&copy; 2026 Kkumi Stationery. Created by LDY</p>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+updateCartCount();
+</script>
+
+</body>
+</html>
