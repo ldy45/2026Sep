@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style_dy.css">
+</head>
+
+
+<body>
+
+<main>
+
+<header>
+<h1>♫ DY MUSIC ♫</h1>
+<p>Login to enjoy DY Music</p>
+</header>
+
+<form>
+
+<label for="username">Username</label>
+<input type="text" id="username" name="username">
+
+<div>
+<label for="password">Password</label>
+<button type="button" id="PWBtn" onclick="ShowPW()"
+onmouseover="changeBg('PWBtn', '#eeeeee')" onmouseout="changeBg('PWBtn', 'white')">Show Password</button>
+</div>
+<p>At least 8 characters, including 1 letter and 1 symbol</p>
+<input type="password" id="password" name="password">
+
+<div>
+<input type="button" id="loginBtn" value="Login" onclick="validateForm()"
+onmouseover="changeBg('loginBtn', '#444444')" onmouseout="changeBg('loginBtn', 'black')">
+<input type="reset" id="resetBtn" value="Reset"
+onmouseover="changeBg('resetBtn', '#eeeeee')" onmouseout="changeBg('resetBtn', 'white')">
+</div>
+
+</form>
+
+</main>
+
+<script src="script_dy.js"></script>
+
+</body>
+</html>
